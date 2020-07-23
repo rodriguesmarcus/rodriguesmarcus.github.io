@@ -1,47 +1,88 @@
 body,
 html {
   background-color: #2c3e50;
-  color:#edf6ff;
-  height: 100%;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
+  color: #edf6ff;
+  scroll-behavior: smooth;
 }
 
-.head-img {
-  background-image: url("/img/head.jpg");
-
-  height: 40%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* position: relative;
-    text-align: center;
-    color: #fff; */
+.container {
+  max-width: 840px;
+  border-radius: 5em:
 }
 
-.centered {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/*
+* Header/navbar
+*/
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0.25);
 }
+
+.site-header a {
+  color: #fff;
+  transition: ease-in-out color 0.15s;
+}
+
+.site-header a:hover {
+  color: #62a5e0;
+  text-decoration: none;
+}
+
 
 .header-font {
-  font-size: 5rem;
-  text-align: center;
+  text-align: left;
   font-family: "Open Sans", sans-serif;
-  color: #edf6ff;
-}
-
-.margin {
-    padding: 1.25em 0 1.25em 0;
+  color: #fff;
 }
 
 .bg-footer {
-    background-color: #366c9a;
+  background-color: #366c9a;
 }
 
-.icon-box {
-  padding: 2ch;
+.bg-dark {
+  background-color: #2c3e50;
+}
+
+
+
+.cartao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal>* {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal>* {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.cartao-body {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 1rem;
+  max-width: 960px;
+}
+
+
+.cartao {
+  display: flex;
+  flex: 1 1 250px;
+  justify-content: space-between;
+  padding: 1rem;
 }

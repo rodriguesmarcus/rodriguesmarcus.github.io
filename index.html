@@ -1,15 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="description"
         content="That's my front page in the internet, here I'll link up my projects and talk more about me.">
     <meta name="author" content="Marcus Rodrigues">
     <meta name="keywords" content="web development, python, html5, css, javascript, django, web design">
 
-    <title>/marcus_rodrigues/</title>
-
+    <title>/fullstack developer / python / marcus_rodrigues/</title>
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/src/main.css">
@@ -20,74 +21,137 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand navbar-dark bg-dark">
-            <a href="/#" class="navbar-brand">MarcusRodrigues</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Mim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
+    <nav class="site-header py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="#" aria-label="Home">
+                MarcusRodrigues
+            </a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Home</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Sobre Mim</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Contatos</a>
+            <a class="py-2 d-none d-md-inline-block" href="http://github.com/rodriguesmarcus">
+                <img src="img/github.svg" alt="GitHub">
+            </a>
+        </div>
+    </nav>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h5 class="font-italic font-weight-light text-left">Hello World, I'm</h5>
+            <h1 class="display-3 font-weight-normal header-font">MARCUS RODRIGUES</h1>
+            <p class="lead font-weight-light">Engenheiro eletricista e desenvolvedor web.</p>
+            <a class="btn btn-outline-light" href="#contato">Entre em contato</a>
+        </div>
+
+        <div class="row">
+            <div class="container">
+                <div class="cartao-body">
+                    <div class="cartao">
+                        <h1>Sobre mim</h1>
+                        <p class="lead text-left">Iniciante na carreira de desenvolvedor, sou graduado em Engenharia
+                            Elétrica e estou desenvolvendo meu portfolio utilizando Python como linguagem base.</p>
+                        <a href="#about" class="btn btn-outline-light">Conheça mais</a>
+                    </div>
+                    <div class="cartao">
+                        <h1>Habilidades</h1>
+                        <p class="lead text-left">Trabalho com Python e seus principais frameworks (Django e Flask),
+                            assim como HTML5, CSS e
+                            JS.</p>
+                        <a href="#contato" class="btn btn-outline-light">Ver mais</a>
+                    </div>
+                    <div class="cartao">
+                        <h1>Projetos</h1>
+                        <p class="lead text-left">Os projetos que estou trabalhando estão todos em meu repositório do
+                            GitHub.</p>
+                        <a href="#contato" class="btn btn-outline-light">Projetos</a>
+                    </div>
+                </div>
             </div>
-            <span class="navbar-text">
-                <a href="http://github.com/rodriguesmarcus">
-                    GitHub
-                </a>
-            </span>
-        </nav>
-    </header>
-
-
-    <div class="head-img">
-        <div class="centered header-font">
-            construir. desconstruir. evoluir.
         </div>
     </div>
 
-    <section>
-        <div class="container margin">
-            <p>Formado em Engenharia Industrial Elétrica pelo <a href="https://portal.ifba.edu.br/">IFBA</a> - Instituto
-                Federal de Educação Ciência e Tecnologia da Bahia - possuo experiência na área de gestão de obras e
-                projetos elétricos. Durante projeto de conclusão de curso, desenvolvi um sistema para detecção de lixo
-                no fundo do mar, além de prototipar um ROV para executar as varreduras e identificar pontos de lixo na
-                costa. O contato com machine learning e prototipagem me despertaram interesse em aprofundar meus
-                conhecimentos em programação, escolhi o python como língua para trabalhar e desde então venho me
-                especializando através de cursos, como o Bootcamp da Digital Innovation One para desenvolvedor
-                Full-Stack em Python e o curso de Selenium ministrado pelo Eduardo Mendes.</p>
-            </p>
-        </div>
-    </section>
 
-    <footer class="container-fluid text-center bg-footer margin fixed-bottom">
+    <div id="about" class="container p-3 my-4 shadow">
+        <h1 class="font-weight-light header-font">SOBRE MIM</h1>
+        <div class=" text-center my-3">
+            <img src="img/IMG_7581.jpg" class="rounded-circle shadow" width="20%" height="20%"
+                alt="Foto de perfil de Marcus Rodrigues">
+        </div>
+        <p style="font-size: 1.3em;" class="font-weight-light"> Sou formado em Engenharia Industrial Elétrica pelo <a
+                href="https://portal.ifba.edu.br/">IFBA</a> - Instituto
+            Federal de Educação Ciência e Tecnologia da Bahia e possuo experiência na área de gestão de obras e
+            projetos elétricos.</p>
+        <p style="font-size: 1.3em;" class="font-weight-light">
+            O contato com programação começou durante a adolescência enquanto aprendia a utilizar a plataforma RPG Maker
+            XP, ali tive algum contato com o RGSS (Ruby Game Scripting System) e com as potencialidades da programação.
+        </p>
+        <p style="font-size: 1.3em;" class="font-weight-light">
+            Durante a graduação em Engenharia Elétrica tive duas matérias de introdução e computação aplicada utilizando
+            C e C++.
+        </p>
+        <p style="font-size: 1.3em;" class="font-weight-light">
+            Foi durante o projeto de conclusão de curso, em que desenvolvi um protótipo de ROV e um sistema de machine
+            learning para detecção de lixo no fundo do mar utilizando Faster R-CNN com base na linguagem do Matlab.
+        </p>
+        <p style="font-size: 1.3em;" class="font-weight-light">
+            Esse contato com machine learning e prototipagem despertaram interesse em aprofundar meus
+            conhecimentos em programação, então iniciei a trilha de aprendizado em HTML5, CSS e posteriormente escolhi o
+            Python como linguagem de trabalho. O Python foi escolhido por robustez de bibliotecas para desenvolvimento
+            web, ciência de dados, aprendizado de máquina, etc.
+        </p>
+        <p style="font-size: 1.3em;" class="font-weight-light">
+            Venho trilhando o caminho para me formar um desenvolvedor fullstack e através desse site divulgarei todos os
+            projetos que concluir.
+        </p>
+
+    </div>
+
+
+
+    <div id="contato" class="container p-3 my-4 shadow">
+        <h1 class="font-weight-light header-font">CONTATOS</h1>
+        <div style="font-size: 1.3em;" class="font-weight-light py-2">
+            Sinta-se a vontade para entrar em contato em qualquer um dos canais abaixo, seja sobre dúvidas acerca dos
+            projetos, fazer networking ou oportunidades!
+        </div>
+
+        <div style="font-size: 1.3em;" class="font-weight-light">
+            <h2 class="font-weight-bold">Informações Pessoais</h2>
+            <ul>
+                <li><b>Nome:</b> Marcus Rodrigues</li>
+                <li><b>GitHub:</b> <a href="https://github.com/rodriguesmarcus">https://github.com/rodriguesmarcus</a>
+                </li>
+                <li><b>Linkedin:</b><a href="https://linkedin.com/in/marcvsr/"> https://linkedin.com/in/marcvsr/</a>
+                </li>
+                <li><b>Dev.to:</b> <a href="https://dev.to/rodriguesmarcus"> https://dev.to/rodriguesmarcus</a></li>
+                <li><b>Localização:</b> Salvador, Brasil</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <footer class="container-fluid text-center bg-footer p-3">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
                     <a href="http://github.com/rodriguesmarcus">
-                        <img src="img/github.svg" alt="GitHub">
+                        <img src="img/github.svg" alt="GitHub" height="24px">
                     </a>
                 </div>
 
                 <div class="col-sm-4">
-                    <a href="http://linkedin.com/marcvsr">
-                        <img src="/img/linkedin.svg" alt="LinkedIn">
+                    <a href="https://www.linkedin.com/in/marcvsr/">
+                        <img src="/img/linkedin.svg" alt="LinkedIn" width="24px">
                     </a>
                 </div>
 
                 <div class="col-sm-4">
                     <a href="mailto:rodriguesmarcus@outlook.com">
-                        <img src="/img/email.svg" alt="E-mail">
+                        <img src="/img/email.svg" alt="E-mail" width="24px">
                     </a>
                 </div>
             </div>
         </div>
-        
     </footer>
 
 </body>
